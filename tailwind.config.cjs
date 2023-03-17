@@ -19,10 +19,17 @@ module.exports = {
         tertiary: "#507125",
       },
       backgroundImage: {
-        latest1: "url('/src/images/rien.png')",
-        latest2: "url('/src/images/rien.png')",
-        latest3: "url('/src/images/rien.png')",
+        latest1: "url('')",
+        latest2: "url('')",
+        latest3: "url('')",
       },
+    },
+    screens: {
+      mobile: { max: "480px" },
+
+      tablet: { max: "768px" },
+
+      laptop: { max: "1024px" },
     },
   },
 

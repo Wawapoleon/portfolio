@@ -2,6 +2,7 @@
 import AboutButton from "../components/AboutButton.astro";
 import ContactButton from "../components/ContactButton.astro";
 import DraggableBubble from "../components/DraggableBubble.jsx";
+import MiniBubble from "../components/MiniBubble";
 import ProjectsButton from "../components/ProjectsButton.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
@@ -12,7 +13,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       class="rounded-full h-[400px] w-[400px] absolute bg-gradient-to-tl from-indigo-300 via-fuchsia-200 -z-10 blur-2xl opacity-70 left-0 bottom-0"
     ></span>
     <h2 class="text-3xl mb-8">Liam Tavera</h2>
-    <h1 class="text-5xl mb-8 cursor-default">
+    <h1 class="text-5xl tablet:text-xl mb-8 cursor-default">
       <span
         class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
         >W</span
@@ -142,82 +143,28 @@ import MainLayout from "../layouts/MainLayout.astro";
   >
     <div class="text-secondary flex flex-row gap-x-8 text-xs">
       <div class="-translate-y-24">
-        <a href="/projects">
-          <div
-            class="h-[35vh] w-[15vw] bg-latest1 bg-cover bg-right mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
-          >
-          </div>
-        </a>
-        <p class="mb-4">NIHONGO MASTERY</p>
-        <p class="mb-4">React | Astro</p>
+        <div
+          class="h-[15vw] w-[15vw] mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
+        >
+          <MiniBubble fromCol="indigo-400" viaCol="purple-300" />
+        </div>
       </div>
       <div>
-        <a href="/projects">
-          <div
-            class="h-[35vh] w-[15vw] bg-latest1 bg-cover bg-right mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
-          >
-          </div>
-        </a>
-        <p class="mb-4">NIHONGO MASTERY</p>
-        <p class="mb-4">React | Astro</p>
+        <div
+          class="h-[35vh] w-[15vw] mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
+        >
+          <MiniBubble fromCol="orange-400" viaCol="yellow-200" />
+        </div>
       </div>
       <div class="translate-y-24">
-        <a href="/projects">
-          <div
-            class="h-[35vh] w-[15vw] bg-latest1 bg-cover bg-right mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
-          >
-          </div>
-        </a>
-        <p class="mb-4">NIHONGO MASTERY</p>
-        <p class="mb-4">React | Astro</p>
+        <div
+          class="h-[35vh] w-[15vw] mb-4 shadow-xl hover:scale-105 hover:shadow-2xl text-center transition-all duration-500 rounded-md mr-4 flex flex-col items-center justify-center"
+        >
+          <MiniBubble fromCol="lime-400" viaCol="teal-200" />
+        </div>
       </div>
     </div>
     <div class="w-[30%] h-[100%] flex flex-col justify-center">
-      <h3 class="text-4xl cursor-default mb-8">
-        <span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >L</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >A</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >T</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >E</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >S</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >T</span
-        ><span>&nbsp;&nbsp;</span><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >P</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >R</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >O</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >J</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >E</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >C</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >T</span
-        ><span
-          class="hover:text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 via-fuchsia-200 hover:text-6xl transition-all duration-300"
-          >S</span
-        >
-      </h3>
       <ProjectsButton />
     </div>
   </section>
