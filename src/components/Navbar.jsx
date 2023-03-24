@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-[100%] h-20 flex justify-center items-center tablet:justify-end">
+    <nav className="w-[100%] h-20 flex justify-start mx-[4vw] items-center tablet:justify-end">
       <ul className="font-jacques flex flex-row text-xl tablet:hidden">
         <li
           className={`opacity-70 hover:opacity-100 transition-all duration-200 mr-[4vw]`}

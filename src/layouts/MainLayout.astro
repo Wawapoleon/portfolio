@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 const { title, description } = Astro.props;
 ---
 
@@ -12,6 +12,12 @@ const { title, description } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <meta name="description" content={description} />
@@ -27,7 +33,6 @@ const { title, description } = Astro.props;
       class="w-screen h-full absolute -z-10 opacity-[0.03]"
       alt="background noise"
     />
-    <Navbar client:load />
     <slot />
     <Footer />
   </body>

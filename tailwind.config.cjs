@@ -11,12 +11,12 @@ module.exports = {
       },
       fontFamily: {
         jacques: ["Jacques Francois", "Georgia", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         transparent: "transparent",
-        primary: "#F9F6EE",
+        primary: "#edeff7",
         secondary: "#1B1212",
-        tertiary: "#507125",
       },
       backgroundImage: {
         latest1: "url('')",
